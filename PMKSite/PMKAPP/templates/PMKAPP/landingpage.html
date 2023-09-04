@@ -1,0 +1,20 @@
+{% extends 'PMKAPP/base.html' %}
+<!-- Extends the 'base.html' template, inheriting its structure and content. -->
+
+{% load static %}
+<!-- Loads the 'static' template tag library to handle static files like CSS and JavaScript. -->
+
+{% block title %}Home Page{% endblock %}
+<!-- Sets the title of this page to 'Home Page'. -->
+
+{% block content %}
+<!-- Defines a block named 'content' where the content for this page will be placed. -->
+
+<h1 class="text-center">Landing page</h1>
+<!-- Displays a centered heading for the landing page. -->
+
+{% endblock %}
+<!-- Ends the 'content' block. -->
+
+{% load static %}
+<!-- Loads the 'static' template tag library again (typically, you only need to load it once per template). -->

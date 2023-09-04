@@ -1,0 +1,210 @@
+
+{% extends 'PMKAPP/base.html' %}
+
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+<!-- Personalized dashboard section -->
+<div class="container mt-5">
+    <!-- Jumbotron with welcome message -->
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to your vault, username!</h1>
+      <p class="lead">This is your  dashboard.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-12 mb-3">
+            <button class="btn bg-purple btn-lg d-flex justify-content-between align-items-center w-100">
+                Generate Password <i class="fa fa-arrows-spin fa-3x"></i>
+            </button>
+        </div>
+        <div class="col-md-6 col-sm-12 mb-3">
+            <button class="btn btn-success btn-lg d-flex justify-content-between align-items-center w-100">
+                Add <i class="fa fa-plus fa-3x"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+    
+    
+    
+<div class="container mt-3 mb-3">
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col">
+        <div class="card mb-3 border border-dark" style="max-width: 640px">
+          <div class="row g-0">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <!-- Replace 'src="..."' with your image source -->
+              <img
+                src="{% static 'img/gm.png' %}"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 bg-dark text-light">
+              <div class="card-body">
+                <h5 class="card-title text-center">Gmail</h5>
+                <div class="container ">
+                    
+                  <p class="card-text">Email: {{ email }}</p>
+                  <p class="card-text">Password: **************</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success btn-sm" type="button">
+                      Update
+                    </button>
+                    <button class="btn btn-warning btn-sm ms-2" type="button">
+                      Show
+                    </button>
+                    <button class="btn btn-danger btn-sm ms-2" type="button">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+
+                <p class="card-text text-center mt-2">
+                  <small class="text-light  ">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border border-dark" style="max-width: 640px">
+          <div class="row g-0">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <!-- Replace 'src="..."' with your image source -->
+              <img
+                src="{% static 'img/snapchat.png' %}"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 bg-dark text-light">
+              <div class="card-body">
+                <h5 class="card-title text-center">Snapchat</h5>
+                <div class="container ">
+                    
+                  <p class="card-text">Email: {{ email }}</p>
+                  <p class="card-text">Password: **************</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success btn-sm" type="button">
+                      Update
+                    </button>
+                    <button class="btn btn-warning btn-sm ms-2" type="button">
+                      Show
+                    </button>
+                    <button class="btn btn-danger btn-sm ms-2" type="button">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+
+                <p class="card-text text-center mt-2">
+                  <small class="text-light  ">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border border-dark" style="max-width: 640px">
+          <div class="row g-0">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <!-- Replace 'src="..."' with your image source -->
+              <img
+                src="{% static 'img/tiktok.png' %}"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 bg-dark text-light">
+              <div class="card-body">
+                <h5 class="card-title text-center">Tiktok</h5>
+                <div class="container ">
+                    
+                  <p class="card-text">Email: {{ email }}</p>
+                  <p class="card-text">Password: **************</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success btn-sm" type="button">
+                      Update
+                    </button>
+                    <button class="btn btn-warning btn-sm ms-2" type="button">
+                      Show
+                    </button>
+                    <button class="btn btn-danger btn-sm ms-2" type="button">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+
+                <p class="card-text text-center mt-2">
+                  <small class="text-light  ">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3 border border-dark" style="max-width: 640px">
+          <div class="row g-0">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <!-- Replace 'src="..."' with your image source -->
+              <img
+                src="{% static 'img/instagram.png' %}"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8 bg-dark text-light">
+              <div class="card-body">
+                <h5 class="card-title text-center">Gmail</h5>
+                <div class="container ">
+                    
+                  <p class="card-text">Email: {{ email }}</p>
+                  <p class="card-text">Password: **************</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button class="btn btn-success btn-sm" type="button">
+                      Update
+                    </button>
+                    <button class="btn btn-warning btn-sm ms-2" type="button">
+                      Show
+                    </button>
+                    <button class="btn btn-danger btn-sm ms-2" type="button">
+                      Delete
+                    </button>
+                  </div>
+                </div>
+
+                <p class="card-text text-center mt-2">
+                  <small class="text-light  ">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% load static %}
+
+
