@@ -1,41 +1,61 @@
 body {
-
-    background-color: rgba(0, 136, 248, 0.829);
-    color: #fff; 
+  background-color: rgba(0, 136, 248, 0.829);
+  color: #fff;
+}
+.hero {
+  background-image: url("../img/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.heroText{
+    font-family: "Paytone One";
+    color: #202020;
+    letter-spacing: 2px;
+}
+.hero-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    font-weight: bold; 
 }
 
 
 .bg-purple {
-    background-color: rgb(170, 44, 170); /* Change to your desired shade of purple */
-    color: white; /* Change text color to ensure readability */
-    /* You can add more styling as needed */
+  background-color: rgb(
+    170,
+    44,
+    170
+  ); /* Change to your desired shade of purple */
+  color: white; /* Change text color to ensure readability */
+  /* You can add more styling as needed */
 }
 
 .bg-purple:hover {
-    background-color: rgb(189, 15, 189);
+  background-color: rgb(189, 15, 189);
 }
 
 .bg-purple:click {
-    background-color: rgb(189, 15, 189);
+  background-color: rgb(189, 15, 189);
 }
 
-.gmail{
-
-    background-image: url('../img/logo.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.gmail {
+  background-image: url("../img/logo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.tiktok{
-    background-color: rgb(255, 125, 125);
-    background-image: url('../img/logo.png');
-    height: 27vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.tiktok {
+  background-color: rgb(255, 125, 125);
+  background-image: url("../img/logo.png");
+  height: 27vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 hr {
-    clear: both;
-    visibility: hidden;
+  clear: both;
+  visibility: hidden;
+}
+.filled-star{
+  color: yellow;
 }
