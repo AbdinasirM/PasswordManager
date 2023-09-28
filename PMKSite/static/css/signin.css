@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+/* .login-page {
+   
+    display: inline-block;
+    display: flex;
+    align-items: center;
+} */
+/* .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Make it at least the height of the viewport */
+
+.form-right i {
+    font-size: 100px;
+}
+
+.righsidelogin{
+    background-image: url('../img/pexels-dids-7553873.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

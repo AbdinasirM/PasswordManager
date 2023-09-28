@@ -18,12 +18,12 @@ class HomeView(View):
 class SigninView(View):
     def get(self, request):
         # Renders the 'sign_in.html' template for the sign-in page.
-        return render(request, 'PMKAPP/sign_in.html')
+        return render(request, 'PMKAPP/signin.html')
 
 class SignupView(View):
     def get(self, request):
         # Renders the 'sign_up.html' template for the sign-up page.
-        return render(request, 'PMKAPP/sign_up.html')
+        return render(request, 'PMKAPP/signup.html')
 
 class AddView(View):
     def get(self, request):

@@ -16,10 +16,10 @@ urlpatterns = [
     path('home/', views.HomeView.as_view(), name='home'),
 
     # Sign In Page
-    path('signin/', views.SigninView.as_view(), name='sign_in'),
+    path('signin/', views.SigninView.as_view(), name='signin'),
 
     # Sign Up Page
-    path('signup/', views.SignupView.as_view(), name='sign_up'),
+    path('signup/', views.SignupView.as_view(), name='signup'),
 
     # Add Page
     path('add/', views.AddView.as_view(), name='add'),
