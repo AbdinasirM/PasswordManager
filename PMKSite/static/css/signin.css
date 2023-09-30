@@ -1,24 +1,17 @@
-a {
-    text-decoration: none;
+/* .btn-color {
+  background-color: #0e1c36;
+  color: #fff;
 }
-/* .login-page {
-   
-    display: inline-block;
-    display: flex;
-    align-items: center;
+.profile-image-pic {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+.cardbody-color {
+  background-color: #ebf2fa;
 } */
-/* .login-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh; /* Make it at least the height of the viewport */
-
-.form-right i {
-    font-size: 100px;
-}
-
-.righsidelogin{
-    background-image: url('../img/pexels-dids-7553873.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* 
+a {
+  text-decoration: none;
+} */
