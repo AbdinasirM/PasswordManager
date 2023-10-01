@@ -30,5 +30,8 @@ urlpatterns = [
     # About Us Page
     path('about/', views.AboutusView.as_view(), name='about_us'),
 
+
+    path('test/', views.TestView.as_view(), name='test'),
+
     # Add more app-specific URL patterns as needed
 ]

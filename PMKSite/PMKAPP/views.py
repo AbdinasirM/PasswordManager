@@ -39,3 +39,9 @@ class AboutusView(View):
     def get(self, request):
         # Renders the 'about_us.html' template for the about us page.
         return render(request, 'PMKAPP/about_us.html')
+
+
+class TestView(View):
+    def get(self, request):
+        # Renders the 'about_us.html' template for the about us page.
+        return render(request, 'PMKAPP/test.html')

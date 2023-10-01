@@ -1,104 +1,106 @@
-{% extends 'PMKAPP/base.html' %}
+ {% load static %}
+ <!DOCTYPE html>
+<html lang="en">
 
-{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href=" {% static '/css/style.css' %} ">
 
-{% block title %}Sign up Page{% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></head>
 
-{% block content %}
+<body class="d-flex flex-column min-vh-100">
 
-<!-- <link rel="stylesheet" type="text/css" href=" {% static '/css/signin.css' %} "> -->
-
-<!-- <div class="container mb-3">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-        <div class="card my-3">
-          <img src="https://images.pexels.com/photos/7553873/pexels-photo-7553873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-
-          <form class="card-body cardbody-color p-lg-5">
-
-            <label class="text-dark">Username<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-user"></i></div>
-              <input type="text" class="form-control" placeholder="Enter Username">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="{% static 'img/newlogo.png' %}" alt="Logo" class="img-fluid logo" style="max-height: 40px">
+                PMK
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about_us' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'add' %}">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'generate' %}">Generate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'signin' %}">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                    </li>
+                </ul>
             </div>
-
-            <label class="text-dark">Password<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-lock"></i></div>
-              <input type="password" class="form-control" placeholder="Enter Password">
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary btn-color px-5 mb-3 w-100">Login</button>
-            </div>
-
-            <div id="emailHelp" class="form-text text-center mb-3 text-dark">
-              Not Registered? <a href="#" class="text-dark fw-bold">Create an Account</a>
-            </div>
-
-          </form>
-
         </div>
-      </div>
-    </div>
-  </div> -->
+    </nav>
 
 
+    <div class="container mt-5 mb-5 flex-grow-1">
+        <div class="row justify-content-center mt-4 mb-4">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <div class="card">
+                    <form class="card-body ">
+                        <label class="text-dark">Name<span class="text-danger">*</span></label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-text"><i class="fas fa-user"></i></div>
+                          <input type="text" class="form-control" placeholder="Enter Full name">
+                      </div>
 
+                      <label class="text-dark">Email<span class="text-danger">*</span></label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                          <input type="text" class="form-control" placeholder="Enter Email">
+                      </div>
 
-<div class="container">
-  <div class="container my-5">
-    <div class="row justify-content-center">
-      <div class="col-lg-6 col-md-8 col-sm-10">
-        <div class="card my-3">
-          <!-- <img src="https://images.pexels.com/photos/7553873/pexels-photo-7553873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="..."> -->
+                      <label class="text-dark">Password<span class="text-danger">*</span></label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                          <input type="password" class="form-control" placeholder="Enter Password">
+                      </div>
 
-          <form class="card-body cardbody-color p-lg-5">
+                      <label class="text-dark">Confirm Password<span class="text-danger">*</span></label>
+                      <div class="input-group mb-3">
+                          <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                          <input type="password" class="form-control" placeholder="Confirm Password">
+                      </div>
 
-            <label class="text-dark">Name<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-user"></i></div>
-              <input type="text" class="form-control" placeholder="Enter Full name">
+                      <div class="text-center">
+                          <button type="submit" class="btn btn-primary btn-color px-5 mb-3 w-100">Sign Up</button>
+                      </div>
+
+                      <div id="emailHelp" class="form-text text-center mb-3 text-dark">
+                          already have an account? <a href="{% url 'signin' %}" class="text-dark fw-bold">Sign In</a>
+                      </div>
+                    </form>
+                </div>
             </div>
-
-
-            <label class="text-dark">Email<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-envelope"></i></div>
-              <input type="text" class="form-control" placeholder="Enter Email">
-            </div>
-
-            <label class="text-dark">Password<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-lock"></i></div>
-              <input type="password" class="form-control" placeholder="Enter Password">
-            </div>
-
-            <label class="text-dark">Confirm Password<span class="text-danger">*</span></label>
-            <div class="input-group mb-3">
-              <div class="input-group-text"><i class="fas fa-lock"></i></div>
-              <input type="password" class="form-control" placeholder="Confirm Password">
-            </div>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary btn-color px-5 mb-3 w-100">Sign Up</button>
-            </div>
-
-            <div id="emailHelp" class="form-text text-center mb-3 text-dark">
-              already have an account? <a href="{% url 'signin' %}" class="text-dark fw-bold">Sign In</a>
-            </div>
-
-          </form>
-
         </div>
-      </div>
     </div>
-  </div>
-</div>
 
+    <footer class="text-center bg-light text-dark mt-5">
+        <div class="text-center text-light bg-dark p-3">
+            © 2020 Copyright:
+            <a class="text-warning" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-{% endblock %}
-{% load static %}
+</html>
+
